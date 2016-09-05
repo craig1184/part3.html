@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+      <meta name="author" content="Fred">
+        <meta name="description" content="dating website">
+          <meta name="keywords" content="dating">
+            <style>fieldset {background: lightyellow; border: 10px solid yellow; margin-bottom:
+            10px; width:720px;} label: hover {width: 180px; display: inline-block; text-align:
+            right; vertical-align: top; padding-bottom: 10px; } textarea {width: 360px; height:
+            50px} .labelsCheckboxRadio {width: auto} .sliderOptions {text-align: center; width:
+            50px; color: #F0F0F0; padding-bottom: 6.5px; padding-top: 6.5px; font-weight: bold;
+            font-family: verdana; font-size: 15px} .sliderMinOption {background: #C00000} .sliderMaxOption
+            {background: #990099} .sliderInput {display: inline-block; } </style>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form enctype="multipart/form-data" method="post">
+      <fieldset>
+        <legend>Your Face</legend>
+        <label for="avatar">Your Image:</label> <input id="avatar" type="file" name="avatar"><br><label for="Preview">Image
+        Preview:</label> <img id="Preview">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Your General Details</legend>
+        <label for="name">Name:</label> <input id="name" name="name"><br><label>Gender:</label>
+        <input id="male" type="radio" value="male" name="gender"><label class="labelsCheckboxRadio" for="male">Male</label>
+        <input id="female" type="radio" value="female" name="gender"><label class="labelsCheckboxRadio" for="female">Female</label>
+        <br><label for="age">Age:</label> <input id="age" name="age"><br><label for="Birthday">Date
+        of Birth:</label> <input id="Birthday" type="Date" name="birthday"><br><label for="favColor">Favorite
+        Color:</label> <input id="FavColor" type="Color" name="favColor"><br><label for="Country">Which
+        Country:</label> <select id="Country" name="Country"></select>
+        <option value="noSelection">No selection</option>
+        <option value="sw">Switzerland</option>
+        <option value="cn">China</option>
+        <option value="uz">Uzbekistan</option>
+        <option value="en">England</option>
+        <option value="ir">Iran</option>
+        </fieldset>
+      <br>
+      <fieldset>
+        <legend>Your Indicators</legend>
+        <label for="height">Height:</label> <label class="sliderOptions sliderMinOption">Short</label>
+        <input id="height" class="sliderInput" value="50" name="height"><label class="sliderOptions sliderMaxOption">Tall</label><br><label for="salary">Salary:</label>
+        <label class="sliderOptions sliderMinOption">Poor</label> <input id="salary" class="sliderInput" value="50" name="salary"><label class="sliderOptions sliderMaxOption">Rich</label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Your Contact Information</legend>
+        <label for="email">Email:</label> <input id="email" name="email"><br><label for="phone">Mobile:</label>
+        <input id="phone" name="phone"><br><label for="address">Address:</label> 
+        <textarea id="address" name="address"></textarea>
+        <br><label>Method of Contacting You?</label> <input id="email" type="checkbox" value="email" name="contact"><label class="labelsCheckboxRadio" for="email">Email</label>
+        <input id="wpp" type="checkbox" value="wpp" name="contact"><label class="labelsCheckboxRadio" for="wpp">Whatsapp</label>
+        <input id="in-app-chat" type="checkbox" value="in-app-chat" name="contact"><label class="labelsCheckboxRadio" for="in-app-Chat">In-app
+        Chat</label> 
+      </fieldset>
+      <br><input type="submit" value="Submit"><br>
+    </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+  </body>
+</html>
